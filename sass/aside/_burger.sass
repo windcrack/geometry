@@ -1,0 +1,27 @@
+.aside
+    &-burger
+        cursor: pointer
+        width: 40px
+        margin: 0 auto
+
+.aside-burger > span,
+.aside-burger > span::before,
+.aside-burger > span::after
+    display: block
+    position: absolute
+    height: 2px
+    background-color: $subTextColor
+    cursor: pointer
+
+.aside-burger > span::before
+    content: ''
+    top: -8px
+    width: 40px
+
+.aside-burger > span::after
+    content: ''
+    top: 8px
+    width: 40px
+
+.aside-burger > span
+    width: 34px
