@@ -1,0 +1,38 @@
+.garantee
+    display: flex
+    justify-content: space-between
+    &-left
+        &__title
+            font-style: normal
+            font-weight: 700
+            font-size: 120px
+            line-height: 130%
+            font-family: $fontCG
+            text-transform: uppercase
+            &_number
+                color: $subTextColor
+                text-transform: uppercase
+                font-size: 250px
+        &__subTitle
+            font-weight: 700
+            font-size: 48px
+            line-height: 130%
+            text-transform: uppercase
+            font-family: $fontSG
+            max-width: 30.875rem
+    &-right
+        display: flex
+
+        &__lists
+            max-width: 48.1875rem
+        &__item
+            border-bottom: 1px solid $subTextColor
+            padding: 33px 20px 33px 20px
+            &:last-child
+                border: none
+        &__text
+            font-size: 24px
+            line-height: 135%
+            font-family: $fontSG
+            strong
+                font-weight: 700

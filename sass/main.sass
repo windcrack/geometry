@@ -2,14 +2,18 @@ $mainColor: #1A1919
 $linkColor: #A5846C
 $subTextColor: #B48C74
 $linkColorBlack: #1E2432
+$rgba: rgba(180, 140, 116, .8)
+$fontCG: 'Cormorant Garamond', serif
+$fontSG: 'Cormorant SC', serif
+$fontUbuntu: 'Ubuntu', sans-serif
 
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Ubuntu:wght@500&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Cormorant+SC:wght@400;700&family=Ubuntu:wght@500&display=swap')
 
 *
     margin: 0
     padding: 0
     box-sizing: border-box
-    font-family: 'Cormorant Garamond', serif
+    font-family: $fontCG
 
 body
     display: flex
@@ -53,10 +57,17 @@ a
     text-transform: uppercase
     font-style: italic
 
+.subTitle
+    font-weight: 700
+    font-size: 96px
+    line-height: 130%
+    text-transform: uppercase
+    font-family: $fontSG
+
 .container
     display: flex
     flex-direction: column
-    width: 1520px
+    width: 1518px
     margin: 100px auto 0
     position: relative
 
@@ -68,7 +79,7 @@ a
     &::before
         content: ''
         border-left: 1px solid rgba(180, 140, 116, .15)
-        left: 28.4rem
+        left: 31.4375rem
         position: absolute
         height: 100%
         z-index: 2
@@ -76,7 +87,7 @@ a
     &::after
         content: ''
         border-right: 1px solid rgba(180, 140, 116, .15)
-        right: 36.1rem
+        right: 31.1875rem
         position: absolute
         height: 100%
         z-index: 2
@@ -100,3 +111,6 @@ a
 @import components/hero.sass
 @import components/asideBody.sass
 @import components/burger.sass
+@import components/services.sass
+@import components/catalog.sass
+@import components/garantee.sass

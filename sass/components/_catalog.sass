@@ -1,0 +1,46 @@
+.catalog
+    display: flex
+    flex-direction: column
+    &-header
+        display: flex
+        justify-content: space-between
+        align-items: baseline
+        margin-bottom: 6.25rem
+        &__link
+            display: block
+            font-weight: 700
+            font-size: 20px
+            line-height: 130%
+            text-transform: uppercase
+            color: $subTextColor
+            margin-bottom: 27px
+            margin-right: 5px
+        &__img
+            margin-left: 20px
+            width: 18.7px
+            height: 18.7px
+    &-items
+        display: flex
+        flex-direction: column
+
+    &-item
+        display: flex
+        flex-direction: column
+        color: $subTextColor
+        margin-bottom: 6.1619rem
+        max-width: 63.625rem
+        &:nth-child(odd)
+            margin-right: 31.1875rem
+        &:nth-child(even)
+            margin-left: 31.375rem
+
+        &__title
+            margin-top: 18px
+            font-weight: 700
+            font-size: 36px
+            line-height: 130%
+            text-transform: uppercase
+            display: flex
+            align-items: center
+        &__arrow
+            margin-left: auto

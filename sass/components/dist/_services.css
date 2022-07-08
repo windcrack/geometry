@@ -1,0 +1,8 @@
+.services {
+  display: flex;
+}
+.services-items {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
