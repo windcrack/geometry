@@ -1,0 +1,31 @@
+.reviews {
+  margin-bottom: 15.625rem;
+}
+.reviews-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.reviews-items {
+  display: flex;
+}
+.reviews-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.author-body {
+  display: flex;
+}
+.author-body__avatar {
+  margin-right: 20px;
+}
+.author-body__name, .author-body__date {
+  margin-bottom: 9px;
+}
+.author-body__name {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 120%;
+}

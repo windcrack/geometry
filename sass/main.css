@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Cormorant+SC:wght@400;700&family=Ubuntu:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Cormorant+SC:wght@400;700&family=Ubuntu:wght@500&display=swap&family=Roboto:wght@300&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -50,8 +50,18 @@ a {
 .title {
   font-weight: 700;
   font-size: 90px;
-  line-height: 100%;
   text-transform: uppercase;
+}
+.title_lh100per {
+  line-height: 100%;
+}
+.title_lh109 {
+  line-height: 109px;
+}
+.title_lh130per {
+  line-height: 130%;
+}
+.title_italic {
   font-style: italic;
 }
 
@@ -112,6 +122,17 @@ a {
   opacity: 0.15;
   margin-top: 12rem;
   margin-right: auto;
+}
+
+.start-items {
+  display: flex;
+  cursor: pointer;
+}
+.start-item {
+  margin-right: 5px;
+}
+.start-item:last-child {
+  margin-lefrigmargin-right: 0;
 }
 
 .hero {
@@ -308,6 +329,7 @@ a {
 .garantee {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 15.625rem;
 }
 .garantee-left__title {
   font-style: normal;
@@ -350,4 +372,183 @@ a {
 }
 .garantee-right__text strong {
   font-weight: 700;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 9.375rem;
+}
+.options__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 7.125rem;
+}
+.options-lists {
+  display: flex;
+  border-top: 2px solid #B48C74;
+  margin-bottom: 6.25rem;
+}
+.options-item {
+  display: flex;
+  margin-right: 20px;
+}
+.options-item:last-child {
+  margin-right: 0;
+}
+.options-item__header {
+  display: flex;
+  justify-content: space-between;
+}
+.options-item__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 130%;
+  text-transform: uppercase;
+  font-feature-settings: "pnum" on, "lnum" on;
+}
+.options-item__title_small {
+  font-size: 24px;
+  font-feature-settings: "pnum" on, "lnum" on;
+}
+.options-item__title_color {
+  color: #B48C74;
+}
+.options-item__img_large {
+  width: 47.1875rem;
+}
+.options-item__img_middle {
+  width: 30.8125rem;
+}
+.options-item__img_small {
+  width: 14.25rem;
+}
+
+.mission {
+  height: 33.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 15.625rem;
+}
+.mission-text, .mission-author {
+  font-size: 64px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 130%;
+  text-transform: uppercase;
+}
+.mission-text {
+  color: #B48C74;
+  font-style: italic;
+}
+
+.faq {
+  margin-bottom: 15.625rem;
+}
+.faq-block {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+.faq-subTitle {
+  max-width: 284px;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 130%;
+  font-family: "Roboto", sans-serif;
+}
+.faq-items {
+  width: 1012px;
+}
+.faq-item {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  border-bottom: solid 1px #B48C74;
+  display: flex;
+  justify-content: space-between;
+}
+.faq-item__text {
+  margin: 23px 0 13px;
+}
+.faq-item__arrow-down {
+  transform: rotate(90deg);
+  margin-right: 5px;
+}
+
+.map {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15.625rem;
+}
+.map-iframe {
+  width: 100%;
+  border: 0;
+  height: 660px;
+  margin-top: 50px;
+}
+
+.reviews {
+  margin-bottom: 15.625rem;
+}
+.reviews-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.reviews-items {
+  display: flex;
+}
+.reviews-item {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin-left: 15px;
+}
+.reviews-item:last-child {
+  margin-left: 0;
+}
+.reviews-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  padding-left: 37px;
+  position: relative;
+}
+.reviews-text::before {
+  content: "";
+  position: absolute;
+  color: #B48C74;
+  left: 0;
+  background: url("../img/quotes.svg") no-repeat center;
+  width: 17px;
+  height: 11px;
+}
+
+.author-body {
+  display: flex;
+  margin-left: 35px;
+  margin-bottom: 40px;
+}
+.author-body__avatar {
+  margin-right: 20px;
+}
+.author-body__name, .author-body__date {
+  margin-bottom: 9px;
+}
+.author-body__name {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 120%;
+}
+.author-body__date {
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 12px;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
 }/*# sourceMappingURL=main.css.map */

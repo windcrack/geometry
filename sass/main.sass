@@ -6,8 +6,9 @@ $rgba: rgba(180, 140, 116, .8)
 $fontCG: 'Cormorant Garamond', serif
 $fontSG: 'Cormorant SC', serif
 $fontUbuntu: 'Ubuntu', sans-serif
+$fontRoboto: 'Roboto', sans-serif
 
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Cormorant+SC:wght@400;700&family=Ubuntu:wght@500&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Cormorant+SC:wght@400;700&family=Ubuntu:wght@500&display=swap&family=Roboto:wght@300&display=swap')
 
 *
     margin: 0
@@ -53,9 +54,16 @@ a
 .title
     font-weight: 700
     font-size: 90px
-    line-height: 100%
     text-transform: uppercase
-    font-style: italic
+
+    &_lh100per
+        line-height: 100%
+    &_lh109
+        line-height: 109px
+    &_lh130per
+        line-height: 130%
+    &_italic
+        font-style: italic
 
 .subTitle
     font-weight: 700
@@ -108,9 +116,23 @@ a
     margin-top: 12rem
     margin-right: auto
 
+.start
+    &-items
+        display: flex
+        cursor: pointer
+    &-item
+        margin-right: 5px
+        &:last-child
+            margin-lefrigmargin-right: 0
+
 @import components/hero.sass
 @import components/asideBody.sass
 @import components/burger.sass
 @import components/services.sass
 @import components/catalog.sass
 @import components/garantee.sass
+@import components/options.sass
+@import components/mission.sass
+@import components/faq.sass
+@import components/map.sass
+@import components/reviews.sass

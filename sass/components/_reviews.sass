@@ -1,0 +1,50 @@
+.reviews
+    margin-bottom: 15.625rem
+    &-header
+        display: flex
+        justify-content: space-between
+        align-items: baseline
+    &-items
+        display: flex
+    &-item
+        display: flex
+        flex-direction: column
+        max-width: 500px
+        margin-left: 15px
+        &:last-child
+            margin-left: 0
+    &-text
+        font-weight: 400
+        font-size: 16px
+        line-height: 150%
+        padding-left: 37px
+        position: relative
+        &::before
+            content: ""
+            position: absolute
+            color: $subTextColor
+            left: 0
+            background: url("../img/quotes.svg") no-repeat center
+            width: 17px
+            height: 11px
+.author
+    &-body
+        display: flex
+        margin-left: 35px
+        margin-bottom: 40px
+        &__avatar
+            margin-right: 20px
+        &__name, &__date
+            margin-bottom: 9px
+        &__name
+            font-style: normal
+            font-weight: 400
+            font-size: 24px
+            line-height: 120%
+        &__date
+            font-weight: 700
+            font-size: 10px
+            line-height: 12px
+            font-family: $fontRoboto
+            letter-spacing: 0.3em
+            text-transform: uppercase

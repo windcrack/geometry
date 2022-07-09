@@ -1,0 +1,13 @@
+.options {
+  display: flex;
+  flex-direction: column;
+}
+.options-lists {
+  display: flex;
+}
+.options-item {
+  display: flex;
+}
+.options-item__header {
+  display: flex;
+}

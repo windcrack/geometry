@@ -1,0 +1,42 @@
+.options
+    display: flex
+    flex-direction: column
+    margin-bottom: 9.375rem
+    &__header
+        display: flex
+        justify-content: space-between
+        align-items: baseline
+        margin-bottom: 7.125rem
+    &-lists
+        display: flex
+        border-top: 2px solid $subTextColor
+        margin-bottom: 6.25rem
+    &-item
+        display: flex
+        margin-right: 20px
+
+        &:last-child
+            margin-right: 0
+
+        &__header
+            display: flex
+            justify-content: space-between
+        &__title
+
+            font-weight: 700
+            font-size: 36px
+            line-height: 130%
+            text-transform: uppercase
+            font-feature-settings: 'pnum' on, 'lnum' on
+            &_small
+                font-size: 24px
+                font-feature-settings: 'pnum' on, 'lnum' on
+            &_color
+                color: $subTextColor
+        &__img
+            &_large
+                width: 47.1875rem
+            &_middle
+                width: 30.8125rem
+            &_small
+                width: 14.25rem
