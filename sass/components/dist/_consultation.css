@@ -1,0 +1,14 @@
+.consultation {
+  margin-bottom: 15.625rem;
+}
+.consultation-form {
+  margin-top: 64px;
+}
+.consultation-form__input {
+  background-color: transparent;
+  font-weight: 100;
+  font-size: 32px;
+  line-height: 38px;
+  color: #fff;
+  padding-bottom: 12px;
+}

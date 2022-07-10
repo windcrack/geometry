@@ -1,0 +1,61 @@
+footer
+    background-color: #fff
+    position: relative
+    z-index: 1
+
+.footer
+    &-body
+        display: flex
+        justify-content: space-between
+        flex-direction: column
+        padding: 81px 0 51px
+    &-left
+        display: flex
+        margin-bottom: 15.625rem
+        justify-content: space-between
+
+        &__logo
+            // 
+
+        &__phone
+            font-weight: 500
+            font-size: 36px
+            line-height: 42px
+            text-align: right
+            position: relative
+            font-family: $fontRoboto
+            color: $colorFooter
+            padding-left: 45px
+            &::before
+                content: ''
+                background: url('../img/phoneF.svg') no-repeat center
+                position: absolute
+                left: 0
+                top: 6px
+                width: 28px
+                height: 30px
+    &-right
+        display: flex
+        align-items: center
+        justify-content: space-between
+        &__progect
+            font-weight: 700
+            font-size: 90px
+            line-height: 130%
+            text-transform: uppercase
+            color: $colorFooter
+        &__img
+            width: 54px
+            height: 54px
+            margin: 0 16px 0 31px
+
+        &__other
+            display: flex
+            flex-direction: column
+            text-align: right
+            &_link
+                font-weight: 300
+                font-size: 16px
+                line-height: 19px
+                text-decoration-line: underline
+                color: $colorFooter

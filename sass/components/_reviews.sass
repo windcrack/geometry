@@ -6,6 +6,7 @@
         align-items: baseline
     &-items
         display: flex
+        justify-content: space-between
     &-item
         display: flex
         flex-direction: column
@@ -19,11 +20,14 @@
         line-height: 150%
         padding-left: 37px
         position: relative
+        max-width: 463px
+        min-width: 459px
         &::before
             content: ""
             position: absolute
             color: $subTextColor
             left: 0
+            top: 5px
             background: url("../img/quotes.svg") no-repeat center
             width: 17px
             height: 11px
