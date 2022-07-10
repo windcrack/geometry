@@ -13,7 +13,6 @@
         font-family: $fontRoboto
     &-items
         width: 1012px
-
     &-item
         font-weight: 400
         font-size: 24px
@@ -21,8 +20,13 @@
         border-bottom: solid 1px $subTextColor
         display: flex
         justify-content: space-between
+        padding-top: 23px
+        cursor: pointer
+        &:first-child
+            padding: 0
         &__text
-            margin: 23px 0 13px
+            margin-bottom: 13px
+            font-family: $fontSG
         &__arrow-down
             transform: rotate(90deg)
             margin-right: 5px

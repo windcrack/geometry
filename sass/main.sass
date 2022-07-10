@@ -43,7 +43,7 @@ a
         align-items: center
         max-width: 331px
         position: absolute
-        right: 16rem
+        right: 10.5rem
         bottom: 14px
 
 .arrow
@@ -70,13 +70,10 @@ a
         font-size: 64px
     &_fz90
         font-size: 90px
-
-.subTitle
-    font-weight: 700
-    font-size: 96px
-    line-height: 130%
-    text-transform: uppercase
-    font-family: $fontSG
+    &_fz96
+        font-size: 96px
+    &_fontSG
+        font-family: $fontSG
 
 .container
     display: flex
@@ -91,16 +88,29 @@ a
     &_paddin-last
         margin-bottom: 15.625rem
 
+.link
+    display: block
+    font-weight: 700
+    font-size: 20px
+    line-height: 130%
+    text-transform: uppercase
+    color: $subTextColor
+    font-family: $fontSG
+    margin-bottom: 27px
+    margin-right: 5px
+    &__img
+        margin-left: 20px
+        width: 18.7px
+        height: 18.7px
+
 .wrapper
     position: relative
     border-left: 1px solid rgba(180, 140, 116, .15)
     border-right: 1px solid rgba(180, 140, 116, .15)
 
     &_padBot
-        padding-bottom: 31.25rem
+        // padding-bottom: 31.25rem
 
-    &_transform
-        transform: translateY(11.2rem)
     &::before
         content: ''
         border-left: 1px solid rgba(180, 140, 116, .15)

@@ -1,0 +1,12 @@
+.hero {
+  position: relative;
+  z-index: 1;
+  padding-top: 50px;
+  margin-bottom: 15.625rem;
+}
+.hero-header {
+  position: relative;
+}
+.hero-img {
+  max-height: 674px;
+}

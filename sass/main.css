@@ -36,7 +36,7 @@ a {
   align-items: center;
   max-width: 331px;
   position: absolute;
-  right: 16rem;
+  right: 10.5rem;
   bottom: 14px;
 }
 
@@ -72,12 +72,10 @@ a {
 .title_fz90 {
   font-size: 90px;
 }
-
-.subTitle {
-  font-weight: 700;
+.title_fz96 {
   font-size: 96px;
-  line-height: 130%;
-  text-transform: uppercase;
+}
+.title_fontSG {
   font-family: "Cormorant SC", serif;
 }
 
@@ -95,16 +93,27 @@ a {
   margin-bottom: 15.625rem;
 }
 
+.link {
+  display: block;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 130%;
+  text-transform: uppercase;
+  color: #B48C74;
+  font-family: "Cormorant SC", serif;
+  margin-bottom: 27px;
+  margin-right: 5px;
+}
+.link__img {
+  margin-left: 20px;
+  width: 18.7px;
+  height: 18.7px;
+}
+
 .wrapper {
   position: relative;
   border-left: 1px solid rgba(180, 140, 116, 0.15);
   border-right: 1px solid rgba(180, 140, 116, 0.15);
-}
-.wrapper_padBot {
-  padding-bottom: 31.25rem;
-}
-.wrapper_transform {
-  transform: translateY(11.2rem);
 }
 .wrapper::before {
   content: "";
@@ -157,11 +166,11 @@ a {
 .hero {
   position: relative;
   z-index: 1;
-  transform: translateY(-11.2rem);
+  padding-top: 50px;
+  margin-bottom: 15.625rem;
 }
 .hero-header {
   position: relative;
-  margin-bottom: 50px;
 }
 .hero-img {
   max-height: 674px;
@@ -191,6 +200,9 @@ a {
 .aside-social__item {
   margin-bottom: 22px;
 }
+.aside-social__img_active path {
+  fill: #000;
+}
 .aside-lang__item {
   width: 40px;
   height: 40px;
@@ -214,6 +226,9 @@ a {
   justify-content: center;
   border: none;
   background: #fff;
+}
+.aside-lang__call_active {
+  border: 1px solid #000;
 }
 
 .aside-burger {
@@ -266,7 +281,7 @@ a {
   border-bottom: 1px solid rgba(180, 140, 116, 0.8);
 }
 .services-item:nth-child(even) .services-item__block {
-  margin-left: 30%;
+  margin-left: 31.375rem;
 }
 .services-item__block {
   display: flex;
@@ -283,7 +298,7 @@ a {
   margin-bottom: 10px;
 }
 .services-item__number::before {
-  content: "/";
+  content: "/0";
 }
 .services-item__title {
   margin-left: 5rem;
@@ -294,27 +309,13 @@ a {
 .catalog {
   display: flex;
   flex-direction: column;
+  margin-bottom: 15.625rem;
 }
 .catalog-header {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
   margin-bottom: 6.25rem;
-}
-.catalog-header__link {
-  display: block;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 130%;
-  text-transform: uppercase;
-  color: #B48C74;
-  margin-bottom: 27px;
-  margin-right: 5px;
-}
-.catalog-header__img {
-  margin-left: 20px;
-  width: 18.7px;
-  height: 18.7px;
 }
 .catalog-items {
   display: flex;
@@ -341,9 +342,12 @@ a {
   text-transform: uppercase;
   display: flex;
   align-items: center;
+  font-family: "Cormorant SC", serif;
 }
 .catalog-item__arrow {
   margin-left: auto;
+  width: 28px;
+  height: 28px;
 }
 
 .garantee {
@@ -354,14 +358,14 @@ a {
 .garantee-left__title {
   font-style: normal;
   font-weight: 700;
-  font-size: 120px;
+  font-size: 130px;
   line-height: 130%;
   font-family: "Cormorant Garamond", serif;
   text-transform: uppercase;
 }
 .garantee-left__title_number {
   color: #B48C74;
-  text-transform: uppercase;
+  text-transform: capitalize;
   font-size: 250px;
 }
 .garantee-left__subTitle {
@@ -392,6 +396,7 @@ a {
 }
 .garantee-right__text strong {
   font-weight: 700;
+  font-family: "Cormorant SC", serif;
 }
 
 .options {
@@ -412,21 +417,29 @@ a {
 }
 .options-item {
   display: flex;
-  margin-right: 20px;
+  margin: 20px 20px 0 0;
 }
 .options-item:last-child {
   margin-right: 0;
 }
+.options-item__arrow {
+  width: 31.2px;
+  height: 31.2px;
+}
 .options-item__header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  font-family: "Cormorant SC", serif;
 }
 .options-item__title {
+  margin-bottom: 9.5px;
   font-weight: 700;
   font-size: 36px;
   line-height: 130%;
   text-transform: uppercase;
   font-feature-settings: "pnum" on, "lnum" on;
+  font-family: "Cormorant SC", serif;
 }
 .options-item__title_small {
   font-size: 24px;
@@ -453,13 +466,16 @@ a {
   margin-bottom: 15.625rem;
 }
 .mission-text, .mission-author {
-  font-size: 64px;
   font-weight: 700;
   text-align: center;
   line-height: 130%;
   text-transform: uppercase;
 }
+.mission-author {
+  font-size: 35px;
+}
 .mission-text {
+  font-size: 64px;
   color: #B48C74;
   font-style: italic;
 }
@@ -489,9 +505,15 @@ a {
   border-bottom: solid 1px #B48C74;
   display: flex;
   justify-content: space-between;
+  padding-top: 23px;
+  cursor: pointer;
+}
+.faq-item:first-child {
+  padding: 0;
 }
 .faq-item__text {
-  margin: 23px 0 13px;
+  margin-bottom: 13px;
+  font-family: "Cormorant SC", serif;
 }
 .faq-item__arrow-down {
   transform: rotate(90deg);
@@ -521,6 +543,7 @@ a {
 .reviews-items {
   display: flex;
   justify-content: space-between;
+  margin-top: 50px;
 }
 .reviews-item {
   display: flex;
@@ -577,6 +600,9 @@ a {
   text-transform: uppercase;
 }
 
+.consultation {
+  margin-bottom: 15.625rem;
+}
 .consultation-form {
   margin-top: 64px;
   width: 48.6875rem;
