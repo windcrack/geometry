@@ -3,7 +3,7 @@ const footerBlockHeight = $('#footer').height();
 
 $(window).scroll( () =>{
     let scroll = $(window).scrollTop();
-    if(scroll > footerBlock && scroll < (footerBlock + footerBlockHeight)){
+    if(scroll > 10610){
         $('.aside-lang__call').addClass('aside-lang__call_active')
         $('.aside-social__img').addClass('aside-social__img_active')
     }else{
