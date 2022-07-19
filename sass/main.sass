@@ -17,6 +17,9 @@ $fontRoboto: 'Roboto', sans-serif
     box-sizing: border-box
     font-family: $fontCG
 
+*::before,
+*::after
+    box-sizing: border-box
 body
     display: flex
     flex-direction: column
@@ -83,7 +86,7 @@ a
     position: relative
 
     &_top
-        margin-top: 100px
+        padding-top: 100px
 
     &_paddin-last
         margin-bottom: 15.625rem
